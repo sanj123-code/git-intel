@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-gitpython
-networkx
-python-dotenv
-requests
-pydantic
