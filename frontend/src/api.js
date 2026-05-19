@@ -1,7 +1,6 @@
 import axios from 'axios'
 
-// This is the address of our Python backend
-const BASE_URL = 'http://localhost:8000'
+const BASE_URL = 'https://git-intel-backend.onrender.com'
 
 export const analyzeRepo = async (repoUrl) => {
   const response = await axios.post(`${BASE_URL}/analyze`, {

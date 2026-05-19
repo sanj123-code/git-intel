@@ -7,12 +7,14 @@ app = FastAPI(title="Git Intel API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://git-intel-backend.onrender.com"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 class RepoRequest(BaseModel):
     repo_url: str
 
